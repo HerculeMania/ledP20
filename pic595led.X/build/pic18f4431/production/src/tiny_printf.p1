@@ -1,0 +1,900 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"14 C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdarg.h
+[v ___va_arg `(*v ~T0 @X0 0 ev`*v ]
+[p i ___va_arg ]
+"13
+[v ___va_start `(*v ~T0 @X0 0 ef ]
+[p i ___va_start ]
+"65 src/tiny_printf.c
+[; ;src/tiny_printf.c: 65: extern int _write(int fd, char *str, int len);
+[v __write `(i ~T0 @X0 0 ef3`i`*uc`i ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\string.h: 54: size_t strlen (const char *);
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+"84 src/tiny_printf.c
+[; ;src/tiny_printf.c: 84: void ts_itoa(char **buf, unsigned int d, int base)
+[v _ts_itoa `(v ~T0 @X0 1 ef3`**uc`ui`i ]
+"85
+[; ;src/tiny_printf.c: 85: {
+{
+[e :U _ts_itoa ]
+"84
+[; ;src/tiny_printf.c: 84: void ts_itoa(char **buf, unsigned int d, int base)
+[v _buf `**uc ~T0 @X0 1 r1 ]
+[v _d `ui ~T0 @X0 1 r2 ]
+[v _base `i ~T0 @X0 1 r3 ]
+"85
+[; ;src/tiny_printf.c: 85: {
+[f ]
+"86
+[; ;src/tiny_printf.c: 86:  int div = 1;
+[v _div `i ~T0 @X0 1 a ]
+[e = _div -> 1 `i ]
+"87
+[; ;src/tiny_printf.c: 87:  while (d/div >= base)
+[e $U 5  ]
+[e :U 6 ]
+"88
+[; ;src/tiny_printf.c: 88:   div *= base;
+[e =* _div _base ]
+[e :U 5 ]
+"87
+[; ;src/tiny_printf.c: 87:  while (d/div >= base)
+[e $ >= / _d -> _div `ui -> _base `ui 6  ]
+[e :U 7 ]
+"90
+[; ;src/tiny_printf.c: 90:  while (div != 0)
+[e $U 8  ]
+[e :U 9 ]
+"91
+[; ;src/tiny_printf.c: 91:  {
+{
+"92
+[; ;src/tiny_printf.c: 92:   int num = d/div;
+[v _num `i ~T0 @X0 1 a ]
+[e = _num -> / _d -> _div `ui `i ]
+"93
+[; ;src/tiny_printf.c: 93:   d = d%div;
+[e = _d % _d -> _div `ui ]
+"94
+[; ;src/tiny_printf.c: 94:   div /= base;
+[e =/ _div _base ]
+"95
+[; ;src/tiny_printf.c: 95:   if (num > 9)
+[e $ ! > _num -> 9 `i 11  ]
+"96
+[; ;src/tiny_printf.c: 96:    *((*buf)++) = (num-10) + 'A';
+[e = *U ++ *U _buf * -> -> 1 `i `x -> -> # *U *U _buf `i `x -> + -> - _num -> 10 `i `ui -> 65 `ui `uc ]
+[e $U 12  ]
+"97
+[; ;src/tiny_printf.c: 97:   else
+[e :U 11 ]
+"98
+[; ;src/tiny_printf.c: 98:    *((*buf)++) = num + '0';
+[e = *U ++ *U _buf * -> -> 1 `i `x -> -> # *U *U _buf `i `x -> + -> _num `ui -> 48 `ui `uc ]
+[e :U 12 ]
+"99
+[; ;src/tiny_printf.c: 99:  }
+}
+[e :U 8 ]
+"90
+[; ;src/tiny_printf.c: 90:  while (div != 0)
+[e $ != _div -> 0 `i 9  ]
+[e :U 10 ]
+"100
+[; ;src/tiny_printf.c: 100: }
+[e :UE 4 ]
+}
+"109
+[; ;src/tiny_printf.c: 109: unsigned int float_precision = 2;
+[v _float_precision `ui ~T0 @X0 1 e ]
+[i _float_precision
+-> -> 2 `i `ui
+]
+"111
+[; ;src/tiny_printf.c: 111: void setFloatPrecision(unsigned int precision)
+[v _setFloatPrecision `(v ~T0 @X0 1 ef1`ui ]
+"112
+[; ;src/tiny_printf.c: 112: {
+{
+[e :U _setFloatPrecision ]
+"111
+[; ;src/tiny_printf.c: 111: void setFloatPrecision(unsigned int precision)
+[v _precision `ui ~T0 @X0 1 r1 ]
+"112
+[; ;src/tiny_printf.c: 112: {
+[f ]
+"113
+[; ;src/tiny_printf.c: 113:   float_precision = precision;
+[e = _float_precision _precision ]
+"114
+[; ;src/tiny_printf.c: 114:   if (float_precision > 8)
+[e $ ! > _float_precision -> -> 8 `i `ui 14  ]
+"115
+[; ;src/tiny_printf.c: 115:       float_precision = 8;
+[e = _float_precision -> -> 8 `i `ui ]
+[e :U 14 ]
+"116
+[; ;src/tiny_printf.c: 116: }
+[e :UE 13 ]
+}
+"118
+[; ;src/tiny_printf.c: 118: int intpow(int x, int y)
+[v _intpow `(i ~T0 @X0 1 ef2`i`i ]
+"119
+[; ;src/tiny_printf.c: 119: {
+{
+[e :U _intpow ]
+"118
+[; ;src/tiny_printf.c: 118: int intpow(int x, int y)
+[v _x `i ~T0 @X0 1 r1 ]
+[v _y `i ~T0 @X0 1 r2 ]
+"119
+[; ;src/tiny_printf.c: 119: {
+[f ]
+"120
+[; ;src/tiny_printf.c: 120:  int res=x;
+[v _res `i ~T0 @X0 1 a ]
+[e = _res _x ]
+"122
+[; ;src/tiny_printf.c: 122:  if (y==0)
+[e $ ! == _y -> 0 `i 16  ]
+"123
+[; ;src/tiny_printf.c: 123:   return 1;
+[e ) -> 1 `i ]
+[e $UE 15  ]
+[e :U 16 ]
+"125
+[; ;src/tiny_printf.c: 125:  for (int ii=1;ii<y;ii++)
+{
+[v _ii `i ~T0 @X0 1 a ]
+[e = _ii -> 1 `i ]
+[e $U 20  ]
+[e :U 17 ]
+"126
+[; ;src/tiny_printf.c: 126:  {
+{
+"127
+[; ;src/tiny_printf.c: 127:   res = res * x;
+[e = _res * _res _x ]
+"128
+[; ;src/tiny_printf.c: 128:  }
+}
+[e ++ _ii -> 1 `i ]
+[e :U 20 ]
+[e $ < _ii _y 17  ]
+[e :U 18 ]
+}
+"129
+[; ;src/tiny_printf.c: 129:  return res;
+[e ) _res ]
+[e $UE 15  ]
+"130
+[; ;src/tiny_printf.c: 130: }
+[e :UE 15 ]
+}
+"132
+[; ;src/tiny_printf.c: 132: void ts_ftoa(char **buf, float f, int precision)
+[v _ts_ftoa `(v ~T0 @X0 1 ef3`**uc`f`i ]
+"133
+[; ;src/tiny_printf.c: 133: {
+{
+[e :U _ts_ftoa ]
+"132
+[; ;src/tiny_printf.c: 132: void ts_ftoa(char **buf, float f, int precision)
+[v _buf `**uc ~T0 @X0 1 r1 ]
+[v _f `f ~T0 @X0 1 r2 ]
+[v _precision `i ~T0 @X0 1 r3 ]
+"133
+[; ;src/tiny_printf.c: 133: {
+[f ]
+"134
+[; ;src/tiny_printf.c: 134:  int a=0,b=0,c=0,k=0,l=0;
+[v _a `i ~T0 @X0 1 a ]
+[e = _a -> 0 `i ]
+[v _b `i ~T0 @X0 1 a ]
+[e = _b -> 0 `i ]
+[v _c `i ~T0 @X0 1 a ]
+[e = _c -> 0 `i ]
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 0 `i ]
+[v _l `i ~T0 @X0 1 a ]
+[e = _l -> 0 `i ]
+"137
+[; ;src/tiny_printf.c: 137:  if(f<0.0)
+[e $ ! < -> _f `d .0.0 22  ]
+"138
+[; ;src/tiny_printf.c: 138:  {
+{
+"140
+[; ;src/tiny_printf.c: 140:   *((*buf)++)='-';
+[e = *U ++ *U _buf * -> -> 1 `i `x -> -> # *U *U _buf `i `x -> -> 45 `ui `uc ]
+"141
+[; ;src/tiny_printf.c: 141:   f*=-1;
+[e =* _f -> -U -> 1 `i `f ]
+"142
+[; ;src/tiny_printf.c: 142:  }
+}
+[e :U 22 ]
+"144
+[; ;src/tiny_printf.c: 144:  a=f;
+[e = _a -> _f `i ]
+"145
+[; ;src/tiny_printf.c: 145:  f-=a;
+[e =- _f -> _a `f ]
+"149
+[; ;src/tiny_printf.c: 149:     if (a==0)
+[e $ ! == _a -> 0 `i 23  ]
+"150
+[; ;src/tiny_printf.c: 150:       *((*buf)++) = '0';
+[e = *U ++ *U _buf * -> -> 1 `i `x -> -> # *U *U _buf `i `x -> -> 48 `ui `uc ]
+[e :U 23 ]
+"153
+[; ;src/tiny_printf.c: 153:  k=0;
+[e = _k -> 0 `i ]
+"154
+[; ;src/tiny_printf.c: 154:  l=a;
+[e = _l _a ]
+"155
+[; ;src/tiny_printf.c: 155:  while(l!=0)
+[e $U 24  ]
+[e :U 25 ]
+"156
+[; ;src/tiny_printf.c: 156:  {
+{
+"157
+[; ;src/tiny_printf.c: 157:   l=l/10;
+[e = _l / _l -> 10 `i ]
+"158
+[; ;src/tiny_printf.c: 158:   k++;
+[e ++ _k -> 1 `i ]
+"159
+[; ;src/tiny_printf.c: 159:  }
+}
+[e :U 24 ]
+"155
+[; ;src/tiny_printf.c: 155:  while(l!=0)
+[e $ != _l -> 0 `i 25  ]
+[e :U 26 ]
+"160
+[; ;src/tiny_printf.c: 160:     k--;
+[e -- _k -> 1 `i ]
+"169
+[; ;src/tiny_printf.c: 169:  for(l=k+1;l>0;l--)
+{
+[e = _l + _k -> 1 `i ]
+[e $ > _l -> 0 `i 27  ]
+[e $U 28  ]
+[e :U 27 ]
+"170
+[; ;src/tiny_printf.c: 170:  {
+{
+"171
+[; ;src/tiny_printf.c: 171:   b = intpow(10,l-1);
+[e = _b ( _intpow (2 , -> 10 `i - _l -> 1 `i ]
+"172
+[; ;src/tiny_printf.c: 172:   c = a/b;
+[e = _c / _a _b ]
+"173
+[; ;src/tiny_printf.c: 173:   *((*buf)++)=c+48;
+[e = *U ++ *U _buf * -> -> 1 `i `x -> -> # *U *U _buf `i `x -> + _c -> 48 `i `uc ]
+"174
+[; ;src/tiny_printf.c: 174:   a%=b;
+[e =% _a _b ]
+"175
+[; ;src/tiny_printf.c: 175:  }
+}
+[e -- _l -> 1 `i ]
+[e $ > _l -> 0 `i 27  ]
+[e :U 28 ]
+}
+"178
+[; ;src/tiny_printf.c: 178:  *((*buf)++) = '.';
+[e = *U ++ *U _buf * -> -> 1 `i `x -> -> # *U *U _buf `i `x -> -> 46 `ui `uc ]
+"182
+[; ;src/tiny_printf.c: 182:  for(l=0;l<precision;l++)
+{
+[e = _l -> 0 `i ]
+[e $U 33  ]
+[e :U 30 ]
+"183
+[; ;src/tiny_printf.c: 183:  {
+{
+"184
+[; ;src/tiny_printf.c: 184:   f*=10.0;
+[e =* _f -> .10.0 `f ]
+"185
+[; ;src/tiny_printf.c: 185:   b = f;
+[e = _b -> _f `i ]
+"186
+[; ;src/tiny_printf.c: 186:   *((*buf)++)=b+48;
+[e = *U ++ *U _buf * -> -> 1 `i `x -> -> # *U *U _buf `i `x -> + _b -> 48 `i `uc ]
+"187
+[; ;src/tiny_printf.c: 187:   f-=b;
+[e =- _f -> _b `f ]
+"188
+[; ;src/tiny_printf.c: 188:  }
+}
+[e ++ _l -> 1 `i ]
+[e :U 33 ]
+[e $ < _l _precision 30  ]
+[e :U 31 ]
+}
+"189
+[; ;src/tiny_printf.c: 189: }
+[e :UE 21 ]
+}
+"197
+[; ;src/tiny_printf.c: 197: int ts_formatstring(char *buf, const char *fmt, va_list va)
+[v _ts_formatstring `(i ~T0 @X0 1 ef3`*uc`*Cuc`**v ]
+"198
+[; ;src/tiny_printf.c: 198: {
+{
+[e :U _ts_formatstring ]
+"197
+[; ;src/tiny_printf.c: 197: int ts_formatstring(char *buf, const char *fmt, va_list va)
+[v _buf `*uc ~T0 @X0 1 r1 ]
+[v _fmt `*Cuc ~T0 @X0 1 r2 ]
+[v _va `**v ~T0 @X0 1 r3 ]
+"198
+[; ;src/tiny_printf.c: 198: {
+[f ]
+"199
+[; ;src/tiny_printf.c: 199:  char *start_buf = buf;
+[v _start_buf `*uc ~T0 @X0 1 a ]
+[e = _start_buf _buf ]
+"200
+[; ;src/tiny_printf.c: 200:  while(*fmt)
+[e $U 35  ]
+[e :U 36 ]
+"201
+[; ;src/tiny_printf.c: 201:  {
+{
+"203
+[; ;src/tiny_printf.c: 203:   if (*fmt == '%')
+[e $ ! == -> *U _fmt `ui -> 37 `ui 38  ]
+"204
+[; ;src/tiny_printf.c: 204:   {
+{
+"205
+[; ;src/tiny_printf.c: 205:    switch (*(++fmt))
+[e $U 40  ]
+"206
+[; ;src/tiny_printf.c: 206:    {
+{
+"207
+[; ;src/tiny_printf.c: 207:      case 'c':
+[e :U 41 ]
+"208
+[; ;src/tiny_printf.c: 208:     *buf++ = (*(int *)__va_arg(*(int **)va, (int)0));
+[e = *U ++ _buf * -> -> 1 `i `x -> -> # *U _buf `i `x -> *U -> ( ___va_arg , (. -> *U -> _va `**i `*v -> 0 `i `*i `uc ]
+"209
+[; ;src/tiny_printf.c: 209:     break;
+[e $U 39  ]
+"210
+[; ;src/tiny_printf.c: 210:      case 'd':
+[e :U 42 ]
+"211
+[; ;src/tiny_printf.c: 211:      case 'i':
+[e :U 43 ]
+"212
+[; ;src/tiny_printf.c: 212:     {
+{
+"213
+[; ;src/tiny_printf.c: 213:      signed int val = (*(signed int *)__va_arg(*(signed int **)va, (signed int)0));
+[v _val `i ~T0 @X0 1 a ]
+[e = _val *U -> ( ___va_arg , (. -> *U -> _va `**i `*v -> 0 `i `*i ]
+"214
+[; ;src/tiny_printf.c: 214:      if (val < 0)
+[e $ ! < _val -> 0 `i 44  ]
+"215
+[; ;src/tiny_printf.c: 215:      {
+{
+"216
+[; ;src/tiny_printf.c: 216:       val *= -1;
+[e =* _val -U -> 1 `i ]
+"217
+[; ;src/tiny_printf.c: 217:       *buf++ = '-';
+[e = *U ++ _buf * -> -> 1 `i `x -> -> # *U _buf `i `x -> -> 45 `ui `uc ]
+"218
+[; ;src/tiny_printf.c: 218:      }
+}
+[e :U 44 ]
+"219
+[; ;src/tiny_printf.c: 219:      ts_itoa(&buf, val, 10);
+[e ( _ts_itoa (3 , , &U _buf -> _val `ui -> 10 `i ]
+"220
+[; ;src/tiny_printf.c: 220:     }
+}
+"221
+[; ;src/tiny_printf.c: 221:     break;
+[e $U 39  ]
+"223
+[; ;src/tiny_printf.c: 223:      case 'f':
+[e :U 45 ]
+"224
+[; ;src/tiny_printf.c: 224:     {
+{
+"225
+[; ;src/tiny_printf.c: 225:      double val = (*(double *)__va_arg(*(double **)va, (double)0));
+[v _val `d ~T0 @X0 1 a ]
+[e = _val *U -> ( ___va_arg , (. -> *U -> _va `**d `*v -> -> 0 `i `d `*d ]
+"226
+[; ;src/tiny_printf.c: 226:      ts_ftoa(&buf, val, float_precision);
+[e ( _ts_ftoa (3 , , &U _buf -> _val `f -> _float_precision `i ]
+"227
+[; ;src/tiny_printf.c: 227:     }
+}
+"228
+[; ;src/tiny_printf.c: 228:     break;
+[e $U 39  ]
+"230
+[; ;src/tiny_printf.c: 230:      case 's':
+[e :U 46 ]
+"231
+[; ;src/tiny_printf.c: 231:     {
+{
+"232
+[; ;src/tiny_printf.c: 232:      char * arg = (*(char * *)__va_arg(*(char * **)va, (char *)0));
+[v _arg `*uc ~T0 @X0 1 a ]
+[e = _arg *U -> ( ___va_arg , (. -> *U -> _va `***uc `*v -> -> 0 `i `*uc `**uc ]
+"233
+[; ;src/tiny_printf.c: 233:      while (*arg)
+[e $U 47  ]
+[e :U 48 ]
+"234
+[; ;src/tiny_printf.c: 234:      {
+{
+"235
+[; ;src/tiny_printf.c: 235:       *buf++ = *arg++;
+[e = *U ++ _buf * -> -> 1 `i `x -> -> # *U _buf `i `x *U ++ _arg * -> -> 1 `i `x -> -> # *U _arg `i `x ]
+"236
+[; ;src/tiny_printf.c: 236:      }
+}
+[e :U 47 ]
+"233
+[; ;src/tiny_printf.c: 233:      while (*arg)
+[e $ != -> *U _arg `i -> 0 `i 48  ]
+[e :U 49 ]
+"237
+[; ;src/tiny_printf.c: 237:     }
+}
+"238
+[; ;src/tiny_printf.c: 238:     break;
+[e $U 39  ]
+"239
+[; ;src/tiny_printf.c: 239:      case 'u':
+[e :U 50 ]
+"240
+[; ;src/tiny_printf.c: 240:      ts_itoa(&buf, (*(unsigned int *)__va_arg(*(unsigned int **)va, (unsigned int)0)), 10);
+[e ( _ts_itoa (3 , , &U _buf *U -> ( ___va_arg , (. -> *U -> _va `**ui `*v -> -> 0 `i `ui `*ui -> 10 `i ]
+"241
+[; ;src/tiny_printf.c: 241:     break;
+[e $U 39  ]
+"242
+[; ;src/tiny_printf.c: 242:      case 'x':
+[e :U 51 ]
+"243
+[; ;src/tiny_printf.c: 243:      case 'X':
+[e :U 52 ]
+"244
+[; ;src/tiny_printf.c: 244:      ts_itoa(&buf, (*(int *)__va_arg(*(int **)va, (int)0)), 16);
+[e ( _ts_itoa (3 , , &U _buf -> *U -> ( ___va_arg , (. -> *U -> _va `**i `*v -> 0 `i `*i `ui -> 16 `i ]
+"245
+[; ;src/tiny_printf.c: 245:     break;
+[e $U 39  ]
+"246
+[; ;src/tiny_printf.c: 246:      case '%':
+[e :U 53 ]
+"247
+[; ;src/tiny_printf.c: 247:       *buf++ = '%';
+[e = *U ++ _buf * -> -> 1 `i `x -> -> # *U _buf `i `x -> -> 37 `ui `uc ]
+"248
+[; ;src/tiny_printf.c: 248:       break;
+[e $U 39  ]
+"249
+[; ;src/tiny_printf.c: 249:    }
+}
+[e $U 39  ]
+[e :U 40 ]
+[e [\ -> *U =+ _fmt * -> -> 1 `i `x -> -> # *U _fmt `i `x `i , $ -> -> 99 `ui `i 41
+ , $ -> -> 100 `ui `i 42
+ , $ -> -> 105 `ui `i 43
+ , $ -> -> 102 `ui `i 45
+ , $ -> -> 115 `ui `i 46
+ , $ -> -> 117 `ui `i 50
+ , $ -> -> 120 `ui `i 51
+ , $ -> -> 88 `ui `i 52
+ , $ -> -> 37 `ui `i 53
+ 39 ]
+[e :U 39 ]
+"250
+[; ;src/tiny_printf.c: 250:    fmt++;
+[e ++ _fmt * -> -> 1 `i `x -> -> # *U _fmt `i `x ]
+"251
+[; ;src/tiny_printf.c: 251:   }
+}
+[e $U 54  ]
+"253
+[; ;src/tiny_printf.c: 253:   else
+[e :U 38 ]
+"254
+[; ;src/tiny_printf.c: 254:   {
+{
+"255
+[; ;src/tiny_printf.c: 255:    *buf++ = *fmt++;
+[e = *U ++ _buf * -> -> 1 `i `x -> -> # *U _buf `i `x *U ++ _fmt * -> -> 1 `i `x -> -> # *U _fmt `i `x ]
+"256
+[; ;src/tiny_printf.c: 256:   }
+}
+[e :U 54 ]
+"257
+[; ;src/tiny_printf.c: 257:  }
+}
+[e :U 35 ]
+"200
+[; ;src/tiny_printf.c: 200:  while(*fmt)
+[e $ != -> *U _fmt `i -> 0 `i 36  ]
+[e :U 37 ]
+"258
+[; ;src/tiny_printf.c: 258:  *buf = 0;
+[e = *U _buf -> -> 0 `i `uc ]
+"260
+[; ;src/tiny_printf.c: 260:  return (int)(buf - start_buf);
+[e ) / - -> _buf `x -> _start_buf `x -> -> # *U _buf `i `x ]
+[e $UE 34  ]
+"261
+[; ;src/tiny_printf.c: 261: }
+[e :UE 34 ]
+}
+"271
+[; ;src/tiny_printf.c: 271: int ts_formatlength(const char *fmt, va_list va)
+[v _ts_formatlength `(i ~T0 @X0 1 ef2`*Cuc`**v ]
+"272
+[; ;src/tiny_printf.c: 272: {
+{
+[e :U _ts_formatlength ]
+"271
+[; ;src/tiny_printf.c: 271: int ts_formatlength(const char *fmt, va_list va)
+[v _fmt `*Cuc ~T0 @X0 1 r1 ]
+[v _va `**v ~T0 @X0 1 r2 ]
+"272
+[; ;src/tiny_printf.c: 272: {
+[f ]
+"273
+[; ;src/tiny_printf.c: 273:  int length = 0;
+[v _length `i ~T0 @X0 1 a ]
+[e = _length -> 0 `i ]
+"274
+[; ;src/tiny_printf.c: 274:  while (*fmt)
+[e $U 56  ]
+[e :U 57 ]
+"275
+[; ;src/tiny_printf.c: 275:  {
+{
+"276
+[; ;src/tiny_printf.c: 276:   if (*fmt == '%')
+[e $ ! == -> *U _fmt `ui -> 37 `ui 59  ]
+"277
+[; ;src/tiny_printf.c: 277:   {
+{
+"278
+[; ;src/tiny_printf.c: 278:    ++fmt;
+[e =+ _fmt * -> -> 1 `i `x -> -> # *U _fmt `i `x ]
+"279
+[; ;src/tiny_printf.c: 279:    switch (*fmt)
+[e $U 61  ]
+"280
+[; ;src/tiny_printf.c: 280:    {
+{
+"281
+[; ;src/tiny_printf.c: 281:      case 'c':
+[e :U 62 ]
+"282
+[; ;src/tiny_printf.c: 282:         (*(signed int *)__va_arg(*(signed int **)va, (signed int)0));
+[e *U -> ( ___va_arg , (. -> *U -> _va `**i `*v -> 0 `i `*i ]
+"283
+[; ;src/tiny_printf.c: 283:       ++length;
+[e =+ _length -> 1 `i ]
+"284
+[; ;src/tiny_printf.c: 284:       break;
+[e $U 60  ]
+"285
+[; ;src/tiny_printf.c: 285:      case 'd':
+[e :U 63 ]
+"286
+[; ;src/tiny_printf.c: 286:      case 'i':
+[e :U 64 ]
+"287
+[; ;src/tiny_printf.c: 287:      case 'u':
+[e :U 65 ]
+"289
+[; ;src/tiny_printf.c: 289:       length += 11;
+[e =+ _length -> 11 `i ]
+"290
+[; ;src/tiny_printf.c: 290:       (*(signed int *)__va_arg(*(signed int **)va, (signed int)0));
+[e *U -> ( ___va_arg , (. -> *U -> _va `**i `*v -> 0 `i `*i ]
+"291
+[; ;src/tiny_printf.c: 291:       break;
+[e $U 60  ]
+"293
+[; ;src/tiny_printf.c: 293:      case 'f':
+[e :U 66 ]
+"294
+[; ;src/tiny_printf.c: 294:     {
+{
+"296
+[; ;src/tiny_printf.c: 296:       length += 20;
+[e =+ _length -> 20 `i ]
+"297
+[; ;src/tiny_printf.c: 297:       (*(double *)__va_arg(*(double **)va, (double)0));
+[e *U -> ( ___va_arg , (. -> *U -> _va `**d `*v -> -> 0 `i `d `*d ]
+"298
+[; ;src/tiny_printf.c: 298:     }
+}
+"299
+[; ;src/tiny_printf.c: 299:     break;
+[e $U 60  ]
+"301
+[; ;src/tiny_printf.c: 301:      case 's':
+[e :U 67 ]
+"302
+[; ;src/tiny_printf.c: 302:         {
+{
+"303
+[; ;src/tiny_printf.c: 303:          char * str = (*(char * *)__va_arg(*(char * **)va, (char *)0));
+[v _str `*uc ~T0 @X0 1 a ]
+[e = _str *U -> ( ___va_arg , (. -> *U -> _va `***uc `*v -> -> 0 `i `*uc `**uc ]
+"304
+[; ;src/tiny_printf.c: 304:          while (*str++)
+[e $U 68  ]
+[e :U 69 ]
+"305
+[; ;src/tiny_printf.c: 305:           ++length;
+[e =+ _length -> 1 `i ]
+[e :U 68 ]
+"304
+[; ;src/tiny_printf.c: 304:          while (*str++)
+[e $ != -> *U ++ _str * -> -> 1 `i `x -> -> # *U _str `i `x `i -> 0 `i 69  ]
+[e :U 70 ]
+"306
+[; ;src/tiny_printf.c: 306:         }
+}
+"307
+[; ;src/tiny_printf.c: 307:       break;
+[e $U 60  ]
+"308
+[; ;src/tiny_printf.c: 308:      case 'x':
+[e :U 71 ]
+"309
+[; ;src/tiny_printf.c: 309:      case 'X':
+[e :U 72 ]
+"311
+[; ;src/tiny_printf.c: 311:       length += 8;
+[e =+ _length -> 8 `i ]
+"312
+[; ;src/tiny_printf.c: 312:       (*(unsigned int *)__va_arg(*(unsigned int **)va, (unsigned int)0));
+[e *U -> ( ___va_arg , (. -> *U -> _va `**ui `*v -> -> 0 `i `ui `*ui ]
+"313
+[; ;src/tiny_printf.c: 313:       break;
+[e $U 60  ]
+"314
+[; ;src/tiny_printf.c: 314:      default:
+[e :U 73 ]
+"315
+[; ;src/tiny_printf.c: 315:       ++length;
+[e =+ _length -> 1 `i ]
+"316
+[; ;src/tiny_printf.c: 316:       break;
+[e $U 60  ]
+"317
+[; ;src/tiny_printf.c: 317:    }
+}
+[e $U 60  ]
+[e :U 61 ]
+[e [\ -> *U _fmt `i , $ -> -> 99 `ui `i 62
+ , $ -> -> 100 `ui `i 63
+ , $ -> -> 105 `ui `i 64
+ , $ -> -> 117 `ui `i 65
+ , $ -> -> 102 `ui `i 66
+ , $ -> -> 115 `ui `i 67
+ , $ -> -> 120 `ui `i 71
+ , $ -> -> 88 `ui `i 72
+ 73 ]
+[e :U 60 ]
+"318
+[; ;src/tiny_printf.c: 318:   }
+}
+[e $U 74  ]
+"319
+[; ;src/tiny_printf.c: 319:   else
+[e :U 59 ]
+"320
+[; ;src/tiny_printf.c: 320:   {
+{
+"321
+[; ;src/tiny_printf.c: 321:    ++length;
+[e =+ _length -> 1 `i ]
+"322
+[; ;src/tiny_printf.c: 322:   }
+}
+[e :U 74 ]
+"323
+[; ;src/tiny_printf.c: 323:   ++fmt;
+[e =+ _fmt * -> -> 1 `i `x -> -> # *U _fmt `i `x ]
+"324
+[; ;src/tiny_printf.c: 324:  }
+}
+[e :U 56 ]
+"274
+[; ;src/tiny_printf.c: 274:  while (*fmt)
+[e $ != -> *U _fmt `i -> 0 `i 57  ]
+[e :U 58 ]
+"325
+[; ;src/tiny_printf.c: 325:  return length;
+[e ) _length ]
+[e $UE 55  ]
+"326
+[; ;src/tiny_printf.c: 326: }
+[e :UE 55 ]
+}
+"335
+[; ;src/tiny_printf.c: 335: int siprintf(char *buf, const char *fmt, ...)
+[v _siprintf `(i ~T0 @X0 1 e1v`*uc`*Cuc ]
+"336
+[; ;src/tiny_printf.c: 336: {
+{
+[e :U _siprintf ]
+"335
+[; ;src/tiny_printf.c: 335: int siprintf(char *buf, const char *fmt, ...)
+[v _buf `*uc ~T0 @X0 1 r1 ]
+[v _fmt `*Cuc ~T0 @X0 1 r0 ]
+"336
+[; ;src/tiny_printf.c: 336: {
+[f ]
+"337
+[; ;src/tiny_printf.c: 337:  int length;
+[v _length `i ~T0 @X0 1 a ]
+"338
+[; ;src/tiny_printf.c: 338:  va_list va;
+[v _va `*v ~T0 @X0 -> -> 1 `i `ux a ]
+"339
+[; ;src/tiny_printf.c: 339:  *va = __va_start();
+[e = *U &U _va ( ___va_start ..  ]
+"340
+[; ;src/tiny_printf.c: 340:  length = ts_formatstring(buf, fmt, va);
+[e = _length ( _ts_formatstring (3 , , _buf _fmt &U _va ]
+"341
+[; ;src/tiny_printf.c: 341:  ((void)0);
+[e -> 0 `i ]
+"342
+[; ;src/tiny_printf.c: 342:  return length;
+[e ) _length ]
+[e $UE 75  ]
+"343
+[; ;src/tiny_printf.c: 343: }
+[e :UE 75 ]
+}
+"377
+[; ;src/tiny_printf.c: 377: int iprintf(const char *fmt, ...)
+[v _iprintf `(i ~T0 @X0 1 ev`*Cuc ]
+"378
+[; ;src/tiny_printf.c: 378: {
+{
+[e :U _iprintf ]
+"377
+[; ;src/tiny_printf.c: 377: int iprintf(const char *fmt, ...)
+[v _fmt `*Cuc ~T0 @X0 1 r0 ]
+"378
+[; ;src/tiny_printf.c: 378: {
+[f ]
+"379
+[; ;src/tiny_printf.c: 379:  int length = 0;
+[v _length `i ~T0 @X0 1 a ]
+[e = _length -> 0 `i ]
+"380
+[; ;src/tiny_printf.c: 380:  va_list va;
+[v _va `*v ~T0 @X0 -> -> 1 `i `ux a ]
+"381
+[; ;src/tiny_printf.c: 381:  *va = __va_start();
+[e = *U &U _va ( ___va_start ..  ]
+"382
+[; ;src/tiny_printf.c: 382:  length = ts_formatlength(fmt, va);
+[e = _length ( _ts_formatlength (2 , _fmt &U _va ]
+"383
+[; ;src/tiny_printf.c: 383:  ((void)0);
+[e -> 0 `i ]
+"384
+[; ;src/tiny_printf.c: 384:  {
+{
+"385
+[; ;src/tiny_printf.c: 385:   char buf[50];
+[v _buf `uc ~T0 @X0 -> 50 `i a ]
+"386
+[; ;src/tiny_printf.c: 386:   *va = __va_start();
+[e = *U &U _va ( ___va_start ..  ]
+"387
+[; ;src/tiny_printf.c: 387:   length = ts_formatstring(buf, fmt, va);
+[e = _length ( _ts_formatstring (3 , , &U _buf _fmt &U _va ]
+"388
+[; ;src/tiny_printf.c: 388:   length = _write(1, buf, length);
+[e = _length ( __write (3 , , -> 1 `i &U _buf _length ]
+"389
+[; ;src/tiny_printf.c: 389:   ((void)0);
+[e -> 0 `i ]
+"390
+[; ;src/tiny_printf.c: 390:  }
+}
+"391
+[; ;src/tiny_printf.c: 391:  return length;
+[e ) _length ]
+[e $UE 76  ]
+"392
+[; ;src/tiny_printf.c: 392: }
+[e :UE 76 ]
+}
+"433
+[; ;src/tiny_printf.c: 433: int puts(const char *s)
+[v _puts `(i ~T0 @X0 1 ef1`*Cuc ]
+"434
+[; ;src/tiny_printf.c: 434: {
+{
+[e :U _puts ]
+"433
+[; ;src/tiny_printf.c: 433: int puts(const char *s)
+[v _s `*Cuc ~T0 @X0 1 r1 ]
+"434
+[; ;src/tiny_printf.c: 434: {
+[f ]
+"435
+[; ;src/tiny_printf.c: 435:  int length = strlen(s);
+[v _length `i ~T0 @X0 1 a ]
+[e = _length -> ( _strlen (1 _s `i ]
+"436
+[; ;src/tiny_printf.c: 436:  int numbytes = 0;
+[v _numbytes `i ~T0 @X0 1 a ]
+[e = _numbytes -> 0 `i ]
+"437
+[; ;src/tiny_printf.c: 437:  int res;
+[v _res `i ~T0 @X0 1 a ]
+"439
+[; ;src/tiny_printf.c: 439:  numbytes = _write(1, (char*)s, length);
+[e = _numbytes ( __write (3 , , -> 1 `i -> _s `*uc _length ]
+"440
+[; ;src/tiny_printf.c: 440:  numbytes += _write(1, "\n", 1);
+[e =+ _numbytes ( __write (3 , , -> 1 `i :s 1C -> 1 `i ]
+"442
+[; ;src/tiny_printf.c: 442:  if (numbytes == (length+1))
+[e $ ! == _numbytes + _length -> 1 `i 78  ]
+"443
+[; ;src/tiny_printf.c: 443:  {
+{
+"444
+[; ;src/tiny_printf.c: 444:   res = 0;
+[e = _res -> 0 `i ]
+"445
+[; ;src/tiny_printf.c: 445:  }
+}
+[e $U 79  ]
+"446
+[; ;src/tiny_printf.c: 446:  else
+[e :U 78 ]
+"447
+[; ;src/tiny_printf.c: 447:  {
+{
+"448
+[; ;src/tiny_printf.c: 448:   res = (-1);
+[e = _res -U -> 1 `i ]
+"449
+[; ;src/tiny_printf.c: 449:  }
+}
+[e :U 79 ]
+"451
+[; ;src/tiny_printf.c: 451:  return res;
+[e ) _res ]
+[e $UE 77  ]
+"452
+[; ;src/tiny_printf.c: 452: }
+[e :UE 77 ]
+}
+[a 1C 10 0 ]

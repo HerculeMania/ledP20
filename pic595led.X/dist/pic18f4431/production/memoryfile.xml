@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/pic18f4431/production\pic595led.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>16384</length>
+      <used>16370</used>
+      <free>14</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>768</length>
+      <used>404</used>
+      <free>364</free>
+    </memory>
+  </executable>
+</project>

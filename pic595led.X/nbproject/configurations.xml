@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="65">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f3" displayName="board" projectFiles="true">
+        <itemPath>src/main.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="framework" projectFiles="true">
+        <logicalFolder name="f1" displayName="screen" projectFiles="true">
+          <logicalFolder name="graphic" displayName="graphic" projectFiles="true">
+            <logicalFolder name="Fonts" displayName="Fonts" projectFiles="true">
+              <itemPath>src/graphic/Fonts/FreeMono12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMono18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMono24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMono9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoBold12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoBold18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoBold24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoBold9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoBoldOblique12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoBoldOblique18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoBoldOblique24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoBoldOblique9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoOblique12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoOblique18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoOblique24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeMonoOblique9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSans12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSans18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSans24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSans9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansBold12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansBold18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansBold24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansBold9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansBoldOblique12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansBoldOblique18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansBoldOblique24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansBoldOblique9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansOblique12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansOblique18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansOblique24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSansOblique9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerif12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerif18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerif24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerif9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifBold12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifBold18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifBold24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifBold9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifBoldItalic12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifBoldItalic18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifBoldItalic24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifBoldItalic9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifItalic12pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifItalic18pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifItalic24pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/FreeSerifItalic9pt7b.h</itemPath>
+              <itemPath>src/graphic/Fonts/Org_01.h</itemPath>
+              <itemPath>src/graphic/Fonts/Picopixel.h</itemPath>
+              <itemPath>src/graphic/Fonts/TomThumb.h</itemPath>
+            </logicalFolder>
+            <itemPath>src/graphic/Adafruit_GFX.h</itemPath>
+            <itemPath>src/graphic/gfxfont.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="Screen" displayName="Screen" projectFiles="true">
+            <itemPath>src/Screen/ScreenDriver.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>src/spi.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="system" projectFiles="true">
+        <itemPath>src/system_config.h</itemPath>
+      </logicalFolder>
+      <itemPath>src/tiny_printf.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="framework" projectFiles="true">
+        <logicalFolder name="f1" displayName="screen" projectFiles="true">
+          <logicalFolder name="graphic" displayName="graphic" projectFiles="true">
+            <logicalFolder name="Fonts" displayName="Fonts" projectFiles="true">
+            </logicalFolder>
+            <itemPath>src/graphic/Adafruit_GFX.c</itemPath>
+            <itemPath>src/graphic/glcdfont.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="Screen" displayName="Screen" projectFiles="true">
+            <itemPath>src/Screen/ScreenDriver.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <itemPath>src/spi.c</itemPath>
+      </logicalFolder>
+      <itemPath>src/main.c</itemPath>
+      <itemPath>src/system.c</itemPath>
+      <itemPath>src/interrupt.c</itemPath>
+      <itemPath>src/tiny_printf.c</itemPath>
+      <itemPath>src/system18f4431.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+    <Elem>src/Screen</Elem>
+    <Elem>src/graphic</Elem>
+    <Elem>src/graphic/Fonts</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F452</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>Simulator</platformTool>
+        <languageToolchain>XC8</languageToolchain>
+        <languageToolchainVersion>2.40</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <packs>
+        <pack name="PIC18Fxxxx_DFP" vendor="Microchip" version="1.2.26"/>
+      </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <HI-TECH-COMP>
+        <property key="additional-warnings" value="true"/>
+        <property key="asmlist" value="true"/>
+        <property key="call-prologues" value="false"/>
+        <property key="default-bitfield-type" value="true"/>
+        <property key="default-char-type" value="true"/>
+        <property key="define-macros" value=""/>
+        <property key="disable-optimizations" value="true"/>
+        <property key="extra-include-directories" value="src;src\graphic;src\Screen"/>
+        <property key="favor-optimization-for" value="-speed,+space"/>
+        <property key="garbage-collect-data" value="true"/>
+        <property key="garbage-collect-functions" value="true"/>
+        <property key="identifier-length" value="255"/>
+        <property key="local-generation" value="false"/>
+        <property key="operation-mode" value="free"/>
+        <property key="opt-xc8-compiler-strict_ansi" value="false"/>
+        <property key="optimization-assembler" value="true"/>
+        <property key="optimization-assembler-files" value="true"/>
+        <property key="optimization-debug" value="false"/>
+        <property key="optimization-invariant-enable" value="false"/>
+        <property key="optimization-invariant-value" value="16"/>
+        <property key="optimization-level" value="-O0"/>
+        <property key="optimization-speed" value="false"/>
+        <property key="optimization-stable-enable" value="false"/>
+        <property key="preprocess-assembler" value="true"/>
+        <property key="short-enums" value="true"/>
+        <property key="tentative-definitions" value="-fno-common"/>
+        <property key="undefine-macros" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="-3"/>
+        <property key="what-to-do" value="ignore"/>
+      </HI-TECH-COMP>
+      <HI-TECH-LINK>
+        <property key="additional-options-checksum" value=""/>
+        <property key="additional-options-code-offset" value=""/>
+        <property key="additional-options-command-line" value=""/>
+        <property key="additional-options-errata" value=""/>
+        <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-trace-type" value=""/>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="backup-reset-condition-flags" value="false"/>
+        <property key="calibrate-oscillator" value="false"/>
+        <property key="calibrate-oscillator-value" value="0x3400"/>
+        <property key="clear-bss" value="true"/>
+        <property key="code-model-external" value="wordwrite"/>
+        <property key="code-model-rom" value=""/>
+        <property key="create-html-files" value="false"/>
+        <property key="data-model-ram" value=""/>
+        <property key="data-model-size-of-double" value="32"/>
+        <property key="data-model-size-of-double-gcc" value="no-short-double"/>
+        <property key="data-model-size-of-float" value="32"/>
+        <property key="data-model-size-of-float-gcc" value="no-short-float"/>
+        <property key="display-class-usage" value="false"/>
+        <property key="display-hex-usage" value="false"/>
+        <property key="display-overall-usage" value="true"/>
+        <property key="display-psect-usage" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="format-hex-file-for-download" value="false"/>
+        <property key="initialize-data" value="true"/>
+        <property key="input-libraries" value="libm"/>
+        <property key="keep-generated-startup.as" value="false"/>
+        <property key="link-in-c-library" value="true"/>
+        <property key="link-in-c-library-gcc" value=""/>
+        <property key="link-in-peripheral-library" value="false"/>
+        <property key="managed-stack" value="false"/>
+        <property key="opt-xc8-linker-file" value="false"/>
+        <property key="opt-xc8-linker-link_startup" value="false"/>
+        <property key="opt-xc8-linker-serial" value=""/>
+        <property key="program-the-device-with-default-config-words" value="true"/>
+        <property key="remove-unused-sections" value="true"/>
+      </HI-TECH-LINK>
+      <XC8-CO>
+        <property key="coverage-enable" value=""/>
+        <property key="stack-guidance" value="false"/>
+      </XC8-CO>
+      <XC8-config-global>
+        <property key="advanced-elf" value="true"/>
+        <property key="gcc-opt-driver-new" value="true"/>
+        <property key="gcc-opt-std" value="-std=c99"/>
+        <property key="gcc-output-file-format" value="dwarf-3"/>
+        <property key="omit-pack-options" value="false"/>
+        <property key="omit-pack-options-new" value="1"/>
+        <property key="output-file-format" value="-mcof,+elf"/>
+        <property key="stack-size-high" value="auto"/>
+        <property key="stack-size-low" value="auto"/>
+        <property key="stack-size-main" value="auto"/>
+        <property key="stack-type" value="compiled"/>
+        <property key="user-pack-device-support" value=""/>
+        <property key="wpo-lto" value="false"/>
+      </XC8-config-global>
+    </conf>
+    <conf name="pic18f4431" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F4431</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>noID</platformTool>
+        <languageToolchain>XC8</languageToolchain>
+        <languageToolchainVersion>2.40</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <packs>
+        <pack name="PIC18Fxxxx_DFP" vendor="Microchip" version="1.2.26"/>
+      </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <HI-TECH-COMP>
+        <property key="additional-warnings" value="true"/>
+        <property key="asmlist" value="true"/>
+        <property key="call-prologues" value="false"/>
+        <property key="default-bitfield-type" value="true"/>
+        <property key="default-char-type" value="true"/>
+        <property key="define-macros" value=""/>
+        <property key="disable-optimizations" value="true"/>
+        <property key="extra-include-directories" value="src;src\graphic;src\Screen"/>
+        <property key="favor-optimization-for" value="-speed,+space"/>
+        <property key="garbage-collect-data" value="true"/>
+        <property key="garbage-collect-functions" value="true"/>
+        <property key="identifier-length" value="255"/>
+        <property key="local-generation" value="false"/>
+        <property key="operation-mode" value="free"/>
+        <property key="opt-xc8-compiler-strict_ansi" value="false"/>
+        <property key="optimization-assembler" value="true"/>
+        <property key="optimization-assembler-files" value="true"/>
+        <property key="optimization-debug" value="false"/>
+        <property key="optimization-invariant-enable" value="false"/>
+        <property key="optimization-invariant-value" value="16"/>
+        <property key="optimization-level" value="-O0"/>
+        <property key="optimization-speed" value="false"/>
+        <property key="optimization-stable-enable" value="false"/>
+        <property key="preprocess-assembler" value="true"/>
+        <property key="short-enums" value="true"/>
+        <property key="tentative-definitions" value="-fno-common"/>
+        <property key="undefine-macros" value=""/>
+        <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="-3"/>
+        <property key="what-to-do" value="ignore"/>
+      </HI-TECH-COMP>
+      <HI-TECH-LINK>
+        <property key="additional-options-checksum" value=""/>
+        <property key="additional-options-code-offset" value=""/>
+        <property key="additional-options-command-line" value=""/>
+        <property key="additional-options-errata" value=""/>
+        <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-trace-type" value=""/>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="backup-reset-condition-flags" value="false"/>
+        <property key="calibrate-oscillator" value="false"/>
+        <property key="calibrate-oscillator-value" value="0x3400"/>
+        <property key="clear-bss" value="true"/>
+        <property key="code-model-external" value="wordwrite"/>
+        <property key="code-model-rom" value=""/>
+        <property key="create-html-files" value="false"/>
+        <property key="data-model-ram" value=""/>
+        <property key="data-model-size-of-double" value="32"/>
+        <property key="data-model-size-of-double-gcc" value="no-short-double"/>
+        <property key="data-model-size-of-float" value="32"/>
+        <property key="data-model-size-of-float-gcc" value="no-short-float"/>
+        <property key="display-class-usage" value="false"/>
+        <property key="display-hex-usage" value="false"/>
+        <property key="display-overall-usage" value="true"/>
+        <property key="display-psect-usage" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="format-hex-file-for-download" value="false"/>
+        <property key="initialize-data" value="true"/>
+        <property key="input-libraries" value="libm"/>
+        <property key="keep-generated-startup.as" value="false"/>
+        <property key="link-in-c-library" value="true"/>
+        <property key="link-in-c-library-gcc" value=""/>
+        <property key="link-in-peripheral-library" value="false"/>
+        <property key="managed-stack" value="false"/>
+        <property key="opt-xc8-linker-file" value="false"/>
+        <property key="opt-xc8-linker-link_startup" value="false"/>
+        <property key="opt-xc8-linker-serial" value=""/>
+        <property key="program-the-device-with-default-config-words" value="true"/>
+        <property key="remove-unused-sections" value="true"/>
+      </HI-TECH-LINK>
+      <XC8-CO>
+        <property key="coverage-enable" value=""/>
+        <property key="stack-guidance" value="false"/>
+      </XC8-CO>
+      <XC8-config-global>
+        <property key="advanced-elf" value="true"/>
+        <property key="gcc-opt-driver-new" value="true"/>
+        <property key="gcc-opt-std" value="-std=c99"/>
+        <property key="gcc-output-file-format" value="dwarf-3"/>
+        <property key="omit-pack-options" value="false"/>
+        <property key="omit-pack-options-new" value="1"/>
+        <property key="output-file-format" value="-mcof,+elf"/>
+        <property key="stack-size-high" value="auto"/>
+        <property key="stack-size-low" value="auto"/>
+        <property key="stack-size-main" value="auto"/>
+        <property key="stack-type" value="compiled"/>
+        <property key="user-pack-device-support" value=""/>
+        <property key="wpo-lto" value="false"/>
+      </XC8-config-global>
+      <item path="src/graphic/Fonts/FreeMono12pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMono18pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMono24pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMono9pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoBold12pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoBold18pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoBold24pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoBold9pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoBoldOblique12pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoBoldOblique18pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoBoldOblique24pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoBoldOblique9pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoOblique12pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoOblique18pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoOblique24pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeMonoOblique9pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSans12pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSans18pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSans24pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSans9pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansBold12pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansBold18pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansBold24pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansBold9pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansBoldOblique12pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansBoldOblique18pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansBoldOblique24pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansBoldOblique9pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansOblique12pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansOblique18pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansOblique24pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSansOblique9pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerif12pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerif18pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerif24pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerif9pt7b.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifBold12pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifBold18pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifBold24pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifBold9pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifBoldItalic12pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifBoldItalic18pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifBoldItalic24pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifBoldItalic9pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifItalic12pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifItalic18pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifItalic24pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/graphic/Fonts/FreeSerifItalic9pt7b.h"
+            ex="true"
+            overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+      <item path="src/system.c" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-CO>
+        </XC8-CO>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
